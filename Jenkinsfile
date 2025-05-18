@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Ayoech/microservices'
-            }
-        }
-
         stage('Build Docker Images') {
             steps {
                 script {
